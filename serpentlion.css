@@ -5,6 +5,14 @@ html, body, .pieces img {
   margin: 0;
 }
 
+#preload-01 { background: url(works/2.png) no-repeat -9999px -9999px; }
+#preload-02 { background: url(works/5.png) no-repeat -9999px -9999px; }
+#preload-03 { background: url(works/7.png) no-repeat -9999px -9999px; }
+#preload-04 { background: url(works/8.png) no-repeat -9999px -9999px; }
+#preload-05 { background: url(works/10.png) no-repeat -9999px -9999px; }
+#preload-06 { background: url(works/16.png) no-repeat -9999px -9999px; }
+#preload-07 { background: url(works/trianglepainting.png) no-repeat -9999px -9999px; }
+
 body {
   /*background-image: url("staticslow.gif");*/
   background-color: #0B0B0B;
