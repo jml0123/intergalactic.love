@@ -190,7 +190,6 @@ $(".mainsplash_main").mouseleave(function(){
 
 //PAUSE MARQUEE AND TEXT DESCRIPTION ON HOVER
 
-
 $(".crescent").find("img").mouseenter(function(){
         $(".marquee1").pause();
         $(".name1").fadeIn(700);
@@ -287,7 +286,28 @@ $(".oddpiece").find("img").click(
 
 
 });
+/*
+$(".oddpiece").find("img").mouseenter(
+  function (){
+  $(this).css({'border':'2.3px solid white', 'border-radius' : '0.5px', 'padding' : '17px'});
+  })
+  
+$(".oddpiece").find("img").mouseleave(
+  function (){
+  $(this).css({'border':'none'});
+  })
 
+$(".pieces").find("img").mouseenter(
+  function (){
+  $(this).css({'border':'2.3px solid white', 'border-radius' : '0.5px', 'padding' : '28px'});
+  })
+  
+$(".pieces").find("img").mouseleave(
+  function (){
+  $(this).css({'border':'none'});
+  })
+
+*/
 $(document).ready(function(){
 
 /*! Fades in page on load */

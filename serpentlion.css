@@ -110,7 +110,6 @@ p {
 }
 
 
-
 .details {
   position: fixed;
   bottom: 9%;
@@ -290,4 +289,109 @@ pre {
 }
 
 
+
+@media only screen and (max-width: 750px) {
+.oddpiece img {
+  top:10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+  width: 170px;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  -webkit- transition: all 3.5s;
+  transition: all 1.6s;
+  border: 1.7px solid #191919;
+  border-radius: 0.5px;
+  padding: 28px;
+
+ 
+}
+
+.oddpiece img.large {
+  width: 178px;
+  height: auto;
+  text-align: center;
+  overflow: auto;
+  -webkit- transition: all 3.5s;
+  transition: all 3.2s;
+  border: none;
+  border: 1.7px solid black;
+  border-radius: 0.5px;
+  padding: 10px;
+}
+
+.pieces {
+  top: 26%;
+  left: 39.5%;
+  width: 200px;
+  transform: translate(-50%, 0);
+  position: fixed;
+ 
+ 
+
+}
+
+.pieces img {
+
+  width: auto;
+  height: auto;
+  max-width: 95%;
+  overflow: auto;
+  text-align: center;
+  -webkit- transition: all 3.5s;
+  transition: all 1.6s;
+  border: 1.7px solid #191919;
+  border-radius: 0.5px;
+  padding: 28px;
+ 
+}
+
+.pieces img.large {
+  max-width: 100%;
+  max-height: auto;
+  width: 300px;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  -webkit- transition: all 3.5s;
+  transition: all 3.2s;
+  border: 1.7px solid black;
+  border-radius: 1px;
+
+}
+
+.details {
+  position: fixed;
+  bottom: 15%;
+  left: 53.5%;
+  transform: translate(-50%, 0);
+  opacity: 0.95;
+  font-size: 9px;
+  font-style: italic;
+  color: lightgrey;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  z-index: 5;
+  display:none;
+
+}
+
+ .odddetails {
+  top: 90%;
+  font-size: 9px;
+
+ }
+
+ #woodpiece{
+  top: 17%;
+ }
+
+ #skullpiece {
+  top: 34%;
+
+ }
+
+}
 
