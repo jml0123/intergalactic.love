@@ -24,6 +24,7 @@ body {
   overflow: auto;
   position: relative;
 }
+
 div{
   margin: 0;
 }
@@ -35,7 +36,6 @@ a:link{
 
 a:visited{
   color: #756182;
-
 }
 
 .mainsplash a:link{
@@ -57,7 +57,6 @@ p {
 	left: 50%;
  	transform: translate(-50%, 0);
 	position: fixed;
-
 }
 
 /* MAKE RESPONSIVE */
@@ -328,8 +327,6 @@ pre {
   width: 200px;
   transform: translate(-50%, 0);
   position: fixed;
- 
- 
 
 }
 
@@ -345,7 +342,6 @@ pre {
   border: 1.7px solid #191919;
   border-radius: 0.5px;
   padding: 28px;
- 
 }
 
 .pieces img.large {
@@ -359,7 +355,6 @@ pre {
   transition: all 3.2s;
   border: 1.7px solid black;
   border-radius: 1px;
-
 }
 
 .details {
@@ -375,13 +370,11 @@ pre {
   letter-spacing: 5px;
   z-index: 5;
   display:none;
-
 }
 
  .odddetails {
   top: 90%;
   font-size: 9px;
-
  }
 
  #woodpiece{
@@ -390,7 +383,6 @@ pre {
 
  #skullpiece {
   top: 34%;
-
  }
 
 }
