@@ -482,15 +482,15 @@ pre {
  }
  #status {
   position: absolute;
-  left: 50%;
-  font-family: serif;
-  text-align: center;
-  color: white;
+  width: 100%;
+  left: 25%;
+  font-family: sans-serif;
+  color: blue;
  }
  #fashion {
   position: absolute;
-  left: 53%;
-
+  width: 100%;
+  left: 50%;
  }
 
 }
