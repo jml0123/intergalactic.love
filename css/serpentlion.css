@@ -303,8 +303,8 @@ pre {
 #paintinglayers{
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 24.3%;
-  left: 12.7%;
+  top: 34%;
+  left: 30%;
 }
 
 #paintingbottomimg {
@@ -315,17 +315,24 @@ pre {
 
 #paintingtopimg {
   position: fixed;
-  /*transform: rotate(-20deg);*/
-  transform: rotate(19deg);
+  transform: rotate(-22deg);
   -webkit-filter: saturate(160%); /* Safari 6.0 - 9.0 */
   filter: saturate(160%);
   z-index: 2;
-  /*left: 32%;*/
-  left: 68%;
-  /*top: 37%;*/
   top: 31%;
-  height: 170px;
-  width: 47px;
+  left: 30%;
+  height: 120px;
+  width: auto;
+
+  /* Glitter Gif*/
+
+  /*transform: rotate(30deg);
+  left: 32%;
+  top: 37%;
+  height: 139px;
+  width: 30px;
+  top: 31%;
+  left: 68%;*/
 
 
 
@@ -343,13 +350,14 @@ pre {
 #products {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 74.5%;
-  left: 84%;
+  top: 55%;
+  left: 62%;
 
 }
 
 #productsimg {
   animation: spin-right 18s linear infinite;
+  filter: brightness(90%);
 }
 
 #productsimg:hover {
