@@ -248,9 +248,10 @@ pre {
 }
 
 #status {
-  font-family: sans-serif;
+  font-family: monospace;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
+  z-index: -1;
   letter-spacing: 0.4px;
   text-shadow: 1px 2px white;
   text-align: center;
@@ -366,6 +367,7 @@ pre {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 2;
 }
 
 
@@ -473,9 +475,22 @@ pre {
   top: 28%;
   left: 50%;
  }
+
  #products {
   top: 71%;
   left: 50%;
+ }
+ #status {
+  position: absolute;
+  left: 50%;
+  font-family: serif;
+  text-align: center;
+  color: white;
+ }
+ #fashion {
+  position: absolute;
+  left: 53%;
+
  }
 
 }
@@ -485,8 +500,8 @@ pre {
 
 
 @keyframes marquee {
-    from   { transform: translateY(100%) }
-    to { transform: translateY(-400%) }
+    from   { transform: translateY(400%) }
+    to { transform: translateY(-500%) }
 }
 
 
