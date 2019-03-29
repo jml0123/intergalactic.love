@@ -309,7 +309,7 @@ pre {
 
 #paintingbottomimg {
   z-index: 0;
-  animation: spin-left 40s linear infinite;
+  /*animation: spin-left 40s linear infinite;*/
 
 }
 
@@ -343,7 +343,7 @@ pre {
 }
 
 #paintingbottomimg:hover {
-  opacity: 0.85;
+  opacity: 0.98;
 }
 
 
@@ -356,16 +356,16 @@ pre {
 }
 
 #productsimg {
-  animation: spin-right 18s linear infinite;
+  /*animation: spin-right 18s linear infinite; replaced with anime.js */
   filter: brightness(90%);
 }
 
 #productsimg:hover {
-  opacity: 0.85;
+  opacity: 0.98;
 }
 
 
-#marquee {
+.marquee {
     animation: marquee 10s linear infinite;
 
 }
@@ -378,7 +378,21 @@ pre {
   z-index: 2;
 }
 
+#productvid {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  padding: 100px;
+  cursor: pointer;
+  border-radius: 15%;
+}
 
+#productvid:hover {
+  opacity: 0.9;
+  animation: spin-right-frmcenter-regular 0.5s linear;
+}
 
 
 
@@ -487,6 +501,11 @@ pre {
  #products {
   top: 71%;
   left: 50%;
+
+ }
+ #productsimg {
+  height: 240px;
+  width: auto;
  }
  #status {
   position: absolute;
@@ -520,6 +539,40 @@ pre {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+
+
+@keyframes spin-right-frmcenter {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%)  rotate(-360deg); }
+
+  33%{-webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%)  rotate(-360deg); }
+  66% {
+    -webkit-transform: translate(-50%, -50%)  rotate(0deg);
+            transform:  translate(-50%, -50%) rotate(0deg); } 
+  100%{
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%)  rotate(0deg); }
+  }
+
+@keyframes spin-right-frmcenter-regular {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%)  rotate(0deg); }
+  25% {
+    -webkit-transform: translate(-50%, -50%) rotate(1deg);
+            transform: translate(-50%, -50%)  rotate(1deg); }
+
+  75%{
+    -webkit-transform: translate(-50%, -50%) rotate(-0.3deg);
+            transform: translate(-50%, -50%)  rotate(-0.3deg); }
+  
+  100%{ -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%)  rotate(0deg); }
+  }
+
 
 
 @keyframes spin-left {

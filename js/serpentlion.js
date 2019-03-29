@@ -311,6 +311,35 @@ $(".pieces").find("img").mouseleave(
   })
 
 */
+
+
+
+window.onload = function() {
+  const pvid = document.getElementById("productvid");
+  const marquees = document.getElementsByClassName("marquee");
+  pvid.addEventListener("click", function() {
+    if (pvid.paused){
+    this.play();
+    pvid.style.cursor = "none";
+    document.body.style.backgroundColor = "red";
+    document.body.style.transitionDuration = "1.6s";
+    //pvid.style.animation = "none";
+    pvid.style.animation = "spin-right-frmcenter-regular 0.5s linear";
+    pvid.style.transitionDuration = "4s";
+    for (i = 0; i < marquees.length; i++){
+      $(marquees[i]).fadeOut(600);
+    }}
+    else {
+      this.pause();
+      document.body.style.backgroundColor = "black";
+     pvid.style.animation = "none";
+      for (i = 0; i < marquees.length; i++){
+        $(marquees[i]).fadeIn(600);
+      }
+      pvid.style.cursor = "pointer";
+    }});
+};
+
 $(document).ready(function(){
 
 /*! Fades in page on load */
@@ -323,11 +352,12 @@ $('body').fadeIn(250);
 });
 
 
-
   base_image.src = baseImage;
   base_image.onload = function() {
       window.addEventListener("resize", reInit);
       init();
 }});
+
+
 
 
