@@ -209,11 +209,11 @@ p {
   width: 13vw;
   height: 500px;
   z-index: 100;
-    background: black;
+  background: none;
 }
 
 #hidden-nav:hover #glass-nav {
-  left: -20.17%;
+  left: 11.25%;
 }
 
 #glass-nav{
@@ -249,7 +249,7 @@ p {
 #legend {
   text-align: center;
   top: 20%;
-  right: 8.8%;
+  right: 9.48%;
   position: relative;
   letter-spacing: 3px;
   line-height: 50px;
