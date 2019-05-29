@@ -330,6 +330,7 @@ $('body').fadeIn(250);
 });
 
 
+/*
 $("#hidden-nav").mouseenter(function(){
   $('#glass-nav').css("transform", "translate(-90%)");
 })
@@ -339,6 +340,7 @@ $("#hidden-nav").mouseleave(function(){
   $('#glass-nav').css("transform", "translate(-11%)");
 })
 
+*/
 
 const slider = $(".slideworks");
 $(document).ready(function(){

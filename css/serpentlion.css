@@ -212,6 +212,10 @@ p {
   z-index: 100;
 }
 
+#hidden-nav:hover #glass-nav {
+  left: -20.17%;
+}
+
 #glass-nav{
   background: url(../img/glass.png);
   height: 340px;
@@ -270,6 +274,7 @@ p {
 	position: absolute;
 	display: inline-block;
 }
+
 
 
 .slick-slide {
@@ -615,6 +620,54 @@ pre {
   height: auto;
 }
 
+#productplaceholderimg {
+  width:  80vw;
+  height: auto;
+}
+
+
+.slideworks img {
+  height: 430px;
+  max-width: 344px;
+  filter: drop-shadow(5px 5px 3px #d6d6d6);
+  transition: 0.1s;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+
+
+.artslide h1{
+  font-size: 20.66px;
+  padding-top: 41px;
+}
+
+.artslide p {
+  font-size: 10.33px;
+  padding-top: 3.3px;
+
+}
+
+
+#hidden-nav:hover #glass-nav {
+  left: -30.17%;
+}
+
+#glass-nav{
+  left: 120%;
+  top: -3%;
+}
+
+.navimg {
+  height: 20px;
+  width: 20px;
+
+}
+
+#legend {
+  right: 26.6%;
+}
+
 .oddpiece img {
   top:10%;
   left: 50%;
@@ -737,8 +790,29 @@ pre {
   left: 50%;
  }
 
+
+
 }
 
+
+@media only screen and (max-height: 800px) {
+
+
+    .slideworks {
+      top: 3.33%;
+    }
+
+    .artslide h1{
+      font-size: 16.7px;
+      padding-top: 15px;
+    }
+
+    .artslide p {
+      font-size: 8px;
+
+    }
+
+}
 
 
 
