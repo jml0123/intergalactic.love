@@ -30,8 +30,24 @@
   </div>
 </div>
 
+
+<div class="hiddenback" id="hidden-nav">
+  <div id=glass-nav>
+    <nav id="legend">
+    <a href="001.html"><img class="navimg" src="img/nav-glass/berryred.png"></a><br>
+    <a href="002.html"><img class="navimg" src="img/nav-glass/hazypurp.png"></a><br>
+    <a href="index.html"><img class="navimg" src="img/nav-glass/keygreen.png"></a><br>
+    <a href="products.html"><img class="navimg" src="img/nav-glass/lemonyellow.png"></a><br>
+    </nav>
+  </div>
+</div>
+
+
+
 <!--ART PIECE * PLACE IMAGE HERE * -->
   <!--<img id= "fashion" src="placeholder.png" height="200px" width="200px">-->
+  
+  <img id ="productplaceholderimg" src="img/placeholderimg.png" onmouseenter="disappear(this)">
   <video id="productvid" loop><source src = "media/comingsoon.mp4"  type="video/mp4" muted>Your browser does not support the video tag.</video>
 
 <!--<div class="pieces">
@@ -51,4 +67,32 @@
 
 <!--SCRIPTS-->
 <script src="js/serpentlion.js"></script>
+<script>
+
+window.onload = function() {
+  const pvid = document.getElementById("productvid");
+  const marquees = document.getElementsByClassName("marquee");
+  pvid.addEventListener("click", function() {
+    if (pvid.paused){
+    this.play();
+    pvid.style.cursor = "none";
+    document.body.style.backgroundColor = "red";
+    document.body.style.transitionDuration = "1.6s";
+    //pvid.style.animation = "none";
+    pvid.style.animation = "spin-right-frmcenter-regular 0.5s linear";
+    pvid.style.transitionDuration = "4s";
+    for (i = 0; i < marquees.length; i++){
+      $(marquees[i]).fadeOut(600);
+    }}
+    else {
+      this.pause();
+      document.body.style.backgroundColor = "black";
+     pvid.style.animation = "none";
+      for (i = 0; i < marquees.length; i++){
+        $(marquees[i]).fadeIn(600);
+      }
+      pvid.style.cursor = "pointer";
+    }});
+};
+</script>
 </html>

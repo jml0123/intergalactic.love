@@ -1,6 +1,8 @@
 
 // Modified code 
 
+
+
 (function() {
   var $ = jQuery,
     pauseId = 'jQuery.pause',
@@ -283,8 +285,6 @@ $(".oddpiece").find("img").click(
     function(){
     $(this).toggleClass("large");
     $(".odddetails").fadeOut(30);
-
-
 });
 
 
@@ -314,31 +314,6 @@ $(".pieces").find("img").mouseleave(
 
 
 
-window.onload = function() {
-  const pvid = document.getElementById("productvid");
-  const marquees = document.getElementsByClassName("marquee");
-  pvid.addEventListener("click", function() {
-    if (pvid.paused){
-    this.play();
-    pvid.style.cursor = "none";
-    document.body.style.backgroundColor = "red";
-    document.body.style.transitionDuration = "1.6s";
-    //pvid.style.animation = "none";
-    pvid.style.animation = "spin-right-frmcenter-regular 0.5s linear";
-    pvid.style.transitionDuration = "4s";
-    for (i = 0; i < marquees.length; i++){
-      $(marquees[i]).fadeOut(600);
-    }}
-    else {
-      this.pause();
-      document.body.style.backgroundColor = "black";
-     pvid.style.animation = "none";
-      for (i = 0; i < marquees.length; i++){
-        $(marquees[i]).fadeIn(600);
-      }
-      pvid.style.cursor = "pointer";
-    }});
-};
 
 $(document).ready(function(){
 
@@ -352,12 +327,48 @@ $('body').fadeIn(250);
 });
 
 
-  base_image.src = baseImage;
-  base_image.onload = function() {
-      window.addEventListener("resize", reInit);
-      init();
-}});
+});
 
 
+$("#hidden-nav").mouseenter(function(){
+  $('#glass-nav').css("transform", "translate(-90%)");
+})
 
 
+$("#hidden-nav").mouseleave(function(){
+  $('#glass-nav').css("transform", "translate(-11%)");
+})
+
+
+const slider = $(".slideworks");
+$(document).ready(function(){
+slider.slick({
+  centerMode: true,
+  autoplay: true,
+  speed: 600,
+  prevArrow: false,
+  nextArrow: false,
+  infinite: true,
+  variableWidth: true,
+  /*cssEase: 'cubic-bezier(0.215, 0.61, 0.355, 1)',*/
+  cssEase: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
+  /*cssEase: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',*/
+});
+
+})
+
+
+slider.on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+}));
+
+
+function disappear(element) {
+  element.style.display = "none";
+}
