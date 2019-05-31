@@ -2303,6 +2303,8 @@
 
         if (_.options.centerMode === true) {
 
+
+
             var evenCoef = _.options.slidesToShow % 2 === 0 ? 1 : 0;
 
             centerOffset = Math.floor(_.options.slidesToShow / 2);
@@ -2345,7 +2347,9 @@
                 .eq(index)
                 .addClass('slick-center');
 
-        } else {
+        }
+
+         else {
 
             if (index >= 0 && index <= (_.slideCount - _.options.slidesToShow)) {
 
@@ -2384,6 +2388,7 @@
             }
 
         }
+         
 
         if (_.options.lazyLoad === 'ondemand' || _.options.lazyLoad === 'anticipated') {
             _.lazyLoad();
@@ -3007,5 +3012,8 @@
         }
         return _;
     };
+
+
+
 
 }));

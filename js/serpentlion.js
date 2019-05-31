@@ -346,8 +346,8 @@ const slider = $(".slideworks");
 $(document).ready(function(){
 slider.slick({
   centerMode: true,
-  autoplay: true,
-  speed: 600,
+  autoplay: false,
+  speed: 428,
   prevArrow: false,
   nextArrow: false,
   infinite: true,
