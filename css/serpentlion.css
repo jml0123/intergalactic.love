@@ -312,9 +312,11 @@ p {
 
 }
 
-.slick-center img {
+.slick-center .artslide img {
   transform: scale(1.0045);
-  transition: 1s;
+  transition: 0.4s;
+  opacity: 1;
+  filter: drop-shadow(5px 5px 3px #d6d6d6);
 }
 
 
@@ -336,7 +338,7 @@ p {
 
 
 .slick-center:hover .artslide h1 {
-  opacity: 1;
+  opacity: 0.99;
   transition: 0.6s;
 }
 
@@ -350,12 +352,12 @@ p {
   transform: scale(1.03);
   transition: 0.6s;
   padding: 20.88px;
+  filter: drop-shadow(3px 17px 8px #6d6d6d);
 }
 
 
 .slick-center .artslide img  {
-  transition: 0.4s;
-  opacity: 1;
+ 
 }
 
 /* When clicking center slides, other slides fade out... fix this
@@ -389,6 +391,9 @@ p {
   transition: 0.1s;
   padding: 20px;
   vertical-align: middle;
+
+
+
 }
 
 /*.artslide img:hover {
@@ -420,6 +425,7 @@ p {
   display: inline-block;
   opacity: 0.2;
   transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  filter: grayscale(20%) blur(0.02rem);
 
 
 }
@@ -634,6 +640,31 @@ pre {
   border-radius: 15%;
   width: 475px;
   height: auto;
+}
+
+
+.shapes-nav {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  list-style: none;
+  background: navy;
+  text-align: center;
+  justify-content: space-around;
+
+}
+
+.shapes-nav li {
+  display: inline-block;
+}
+
+.shape-img {
+  height: 30px;
+  width: 30px;
+}
+
+.shape-img:hover {
+  transform: scale(1.045);
 }
 
 
@@ -869,7 +900,7 @@ pre {
 
     .artslide h1{
       font-size: 16.7px;
-      padding-top: 15px;
+      padding-top: 33px;
     }
 
     .artslide p {
