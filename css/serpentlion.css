@@ -887,7 +887,6 @@ pre {
 
 
 
-
 @media only screen and (min-height: 691px) and (max-height: 800px) {
 
 
@@ -908,6 +907,24 @@ pre {
     .artslide img {
       width: 220px;
     }
+
+
+    .navimg {
+     height: 20px;
+     width: 20px;
+
+    }
+
+    #glass-nav {
+      height: 300px;
+      width: 100px;
+    }
+
+
+    #hidden-nav:hover #glass-nav {
+      left: 30.25%;
+    }
+
 
 
 
@@ -936,6 +953,30 @@ pre {
       width: 220px;
     }
 
+    #glass-nav-wrapper {
+      height: 100vh;
+    }
+
+    .navimg {
+     height: 20px;
+     width: 20px;
+
+    }
+
+    #glass-nav {
+      height: 300px;
+      width: 100px;
+    }
+
+
+    #hidden-nav:hover #glass-nav {
+      left: 30.25%;
+    }
+
+
+
+
+
 }
 
 
@@ -961,6 +1002,30 @@ pre {
     .artslide img {
       width: 180px;
     }
+
+
+
+    #glass-nav-wrapper {
+      height: 100vh;
+    }
+
+    .navimg {
+     height: 20px;
+     width: 20px;
+
+    }
+
+    #glass-nav {
+      height: 290px;
+      width: 100px;
+    }
+
+
+    #hidden-nav:hover #glass-nav {
+      left: 30.25%;
+    }
+
+
 
 }
 
@@ -988,6 +1053,30 @@ pre {
       width: 130px;
     }
 
+
+
+    #glass-nav-wrapper {
+      height: 100vh;
+    }
+
+    .navimg {
+     height: 20px;
+     width: 20px;
+
+    }
+
+    #glass-nav {
+      height: 300px;
+      width: 100px;
+    }
+
+
+    #hidden-nav:hover #glass-nav {
+      left: 30.25%;
+    }
+
+
+
 }
 
 @media only screen and (max-height: 419px) {
@@ -1012,6 +1101,31 @@ pre {
       width: 94px;
 
     }
+
+
+
+    #glass-nav-wrapper {
+      height: 100vh;
+    }
+
+
+  .navimg {
+     height: 20px;
+     width: 20px;
+
+    }
+
+    #glass-nav {
+      height: 300px;
+      width: 100px;
+    }
+
+
+    #hidden-nav:hover #glass-nav {
+      left: 30.25%;
+    }
+
+
 
 }
 
