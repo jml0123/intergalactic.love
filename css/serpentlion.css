@@ -716,8 +716,9 @@ pre {
   background: none;
 }
 
+
 #hidden-nav:hover #glass-nav {
-  left: 10%;
+  left: 9%;
 }
 
 #glass-nav{
@@ -953,7 +954,7 @@ pre {
 
 
     #hidden-nav:hover #glass-nav {
-      left: 30.25%;
+      left: 25.25%;
     }
 
 
@@ -1001,7 +1002,7 @@ pre {
 
 
     #hidden-nav:hover #glass-nav {
-      left: 30.25%;
+      left: 19.25%;
     }
 
 
