@@ -2,6 +2,10 @@
 // Modified code 
 
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    document.getElementsByClassName('spaced')[0].innerHTML = "a.k."
+}
+
 
 (function() {
   var $ = jQuery,
@@ -181,6 +185,8 @@ $('.marquee7').marqueeify({
   });
 
 //SPLASH PAGE & BIO
+
+
 $(".mainsplash_main").mouseenter(function(){
         $(".bio").fadeIn(2000);
   }); 
