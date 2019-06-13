@@ -27,7 +27,6 @@ body {
 }
 
 
-
 div{
   margin: 0;
 }
@@ -408,10 +407,8 @@ p {
   transition: 0.1s;
   padding: 20px;
   vertical-align: middle;
-
-
-
 }
+
 
 /*.artslide img:hover {
   transform: scale(1.0098);
@@ -428,12 +425,11 @@ p {
 }
 
 
-
 .artslide::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 
@@ -444,9 +440,8 @@ p {
   opacity: 0.2;
   transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   filter: grayscale(20%) blur(0.02rem);
-
-
 }
+
 
 .artslide {
   text-align: center;
@@ -454,10 +449,11 @@ p {
 
 
 .slick-initialized .slick-slide {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
 }
+
 
 #backbtn {
   opacity: 0;
@@ -476,6 +472,7 @@ p {
 	opacity: 1;
 }
 
+
 .hiddenlogo {
   opacity: 0;
   right: 4px;
@@ -492,11 +489,13 @@ pre {
 	font-size: 0.5vw; color: darkgrey; opacity: 0.44;
 }
 
+
 #plaintext {
   font-family: serif;
   opacity: 0.70;
   text-shadow: 1px 0px 20px yellow;
 }
+
 
 #status {
   font-family: monospace;
@@ -506,8 +505,6 @@ pre {
   letter-spacing: 0.4px;
   text-shadow: 1px 2px white;
   text-align: center;
-
-
 }
 
 
@@ -521,14 +518,15 @@ pre {
 	display: inline-block;
 }
 
+
 .hiddenback:hover #backbtn {
 	opacity: 0.87;
 	-webkit-transition: all 1s ease;
   	-moz-transition: all 1s ease;
   	-o-transition: all 1s ease;
   	transition: all 1s ease; 
-
 }
+
 
 .hiddenback_main:hover .mainsplash_main {
 	opacity: 0.37;
@@ -536,7 +534,6 @@ pre {
   	-moz-transition: all 1s ease;
   	-o-transition: all 1s ease;
   	transition: all 1s ease; 
-
 }
 
 
@@ -546,9 +543,7 @@ pre {
   	-moz-transition: all 2s ease;
   	-o-transition: all 2s ease;
   	transition: all 2s ease; 
-
 }
-
 
 
 #paintinglayers{
@@ -561,8 +556,8 @@ pre {
 #paintingbottomimg {
   z-index: 0;
   /*animation: spin-left 40s linear infinite;*/
-
 }
+
 
 #paintingtopimg {
   position: fixed;
@@ -731,7 +726,7 @@ pre {
   margin: 0 auto;
   padding: 0;
   left: 0;
-  top: 40%;
+  top: 41.88%;
   margin-top: 0;
   right: 0;
 }
