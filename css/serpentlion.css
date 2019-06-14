@@ -819,7 +819,7 @@ pre {
   text-align: center;
   -webkit- transition: all 3.5s;
   transition: all 1.6s;
-  border: 1.7px solid #191919;
+  /*border: 1.7px solid #191919;*/
   border-radius: 0.5px;
   padding: 28px;
 
@@ -834,7 +834,7 @@ pre {
   -webkit- transition: all 3.5s;
   transition: all 3.2s;
   border: none;
-  border: 1.7px solid black;
+  /*border: 1.7px solid black;*/
   border-radius: 0.5px;
   padding: 10px;
 }
@@ -858,7 +858,7 @@ pre {
   text-align: center;
   -webkit- transition: all 3.5s;
   transition: all 1.6s;
-  border: 1.7px solid #191919;
+  /*border: 1.7px solid #191919;*/
   border-radius: 0.5px;
   padding: 28px;
 }
@@ -872,7 +872,7 @@ pre {
   text-align: center;
   -webkit- transition: all 3.5s;
   transition: all 3.2s;
-  border: 1.7px solid black;
+  /*border: 1.7px solid black;*/
   border-radius: 1px;
 }
 

@@ -348,34 +348,6 @@ $("#hidden-nav").mouseleave(function(){
 
 */
 
-const slider = $(".slideworks");
-$(document).ready(function(){
-slider.slick({
-  centerMode: true,
-  autoplay: false,
-  speed: 428,
-  prevArrow: false,
-  nextArrow: false,
-  infinite: true,
-  variableWidth: true,
-  /*cssEase: 'cubic-bezier(0.215, 0.61, 0.355, 1)',*/
-  cssEase: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)',
-  /*cssEase: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',*/
-});
-
-})
-
-
-slider.on('wheel', (function(e) {
-  e.preventDefault();
-
-  if (e.originalEvent.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-}));
-
 
 function disappear(element) {
   element.style.display = "none";
