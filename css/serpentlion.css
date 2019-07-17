@@ -438,7 +438,7 @@ p {
 
 .slideworks {
   top: 10%;
-  padding-top: 19px;
+  padding-top: 100px;
   width: 100%;
   height: 70%;
   background: none;
@@ -690,7 +690,7 @@ pre {
 .product-img-wrapper {
   position: relative;
   height: 85%;
-  width: 85%;
+  width: auto;
   margin: 0 auto;
   display: inline-flex;
   text-align: center;
@@ -701,10 +701,11 @@ pre {
 }
 
 .product-img-wrapper img {
-  margin: 0 auto;
+  margin: 1vw;
   position: relative;
-  height: 70%;
+  height: 56%;
   display: inline-block;
+  padding: 1vw;
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   filter: drop-shadow(2px 2px 3px #1f1f1f);
 
@@ -727,7 +728,7 @@ pre {
   position: absolute;
   min-height: 500px;
   min-width: 100px;
-  height: 95%;
+  height: 95vh;
   width: 20%;
   font-family: 'Muli', sans-serif;
   color: #2a3984;
@@ -992,7 +993,7 @@ pre {
   color: #2a3984;
   width: 80%;
   height: auto;
-  font-size: 120%;
+  font-size:  calc(1em + 0.5vw);
   margin: 1.33em;
   padding: 1.33em;
 
