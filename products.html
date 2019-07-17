@@ -7,6 +7,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Intergalactic Love</title>
     <link rel="stylesheet" type="text/css" href="css/serpentlion.css">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--download jquery for offline work -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -16,7 +19,7 @@
     <meta name="msapplication-TileColor" content="#a61c24">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body style="background-color: white">
+<body style="background-color: #f4f4f4" id="products-body">
 
 
 
@@ -41,39 +44,86 @@
 </div>
 
 
+<!--
+  <img id ="productplaceholderimg" src="img/placeholderimg.png" onmouseenter="disappear(this)">
+  <video id="productvid" loop><source src = "media/comingsoon.mp4"  type="video/mp4" muted>Your browser does not support the video tag.</video>-->
 
 
+
+<div id="products-pg">
+  <div class="products-slide">
+    <div class="products-wrapper">
+      <div class="product-img-wrapper" id="bigger-woman">
+        <img id="bigger-woman-front" src="img/ak_front.jpg"><img id="bigger-woman-back" src="img/ak_back.jpg">
+      </div>
+    </div>
+
+    
+    <div class="product-text-wrapper-l">
+      <div class="product-text-body"><p class="resize bigger-woman-txt"><span class="product-title"><i>The Bigger Woman</i> (Epigraph 2019)</span><br><br>"Armin Kabiri is a visionary artist, poet, and musician. 
+      His work bridges the gap between spiritual and
+       creative realms, and even more-so displays that the gap is non-existent. 
+
+      "In this poetic narrative of self-discovery, Kabiri explores the interplay
+       between external and internal
+
+      Sexual experience opens the doors to self-understanding, and understanding opens yet   other doors to
+  </p>
+  </div>
+      </div>
+     
+     <div class="product-text-wrapper-r">
+      <div class="product-text-body"><p class="resize bigger-woman-txt">worlds.
+             connections between the external and metaphysical worlds. Kabiri finds inherent 
+      contradiction in grasping at the substance of creation as a 
+      mere mortal before revealing that it is exactly the limits of 
+      physicality that allow us to make sense of the beyond. 
+      The Bigger Woman intermingles philosophical treatise
+       with love story. It is a raw exploration of being."    
+
+      <br><br>—Aidan Pillard, Healer </p>
+      </div>
+      </div>
+
+      <div class="mobile-caption-wrapper">
+      <p class="mobile-caption">
+        <span class="product-title"><i>The Bigger Woman</i> (Epigraph 2019)</span><br><br>"Armin Kabiri is a visionary artist, poet, and musician. 
+        His work bridges the gap between spiritual and
+         creative realms, and even more-so displays that the gap is non-existent. 
+
+        "In this poetic narrative of self-discovery, Kabiri explores the interplay
+         between external and internal
+
+        Sexual experience opens the doors to self-understanding, and understanding opens yet other doors to
+        worlds.
+        connections between the external and metaphysical worlds. Kabiri finds inherent 
+        contradiction in grasping at the substance of creation as a 
+        mere mortal before revealing that it is exactly the limits of 
+        physicality that allow us to make sense of the beyond. 
+        The Bigger Woman intermingles philosophical treatise
+         with love story. It is a raw exploration of being."    
+
+      <br><br>—Aidan Pillard, Healer</p>
+      </div>
+
+    
+
+    </div>
+
+
+
+
+
+
+</div>
 
 <!--
-<div class="hiddenback" id="hidden-nav">
-  <div id=glass-nav>
-    <nav id="legend">
-    <a href="001.html"><img class="navimg" src="img/nav-glass/berryred.png"></a><br>
-    <a href="002.html"><img class="navimg" src="img/nav-glass/hazypurp.png"></a><br>
-    <a href="index.html"><img class="navimg" src="img/nav-glass/keygreen.png"></a><br>
-    <a href="products.html"><img class="navimg" src="img/nav-glass/lemonyellow.png"></a><br>
-    </nav>
-  </div>
-</div>
--->
+  REFERENCE
+
+<img src="img/armin_bookpage_concept.png" height="90%" width="auto" position="relative">-->
 
 
-<!--ART PIECE * PLACE IMAGE HERE * -->
-  <!--<img id= "fashion" src="placeholder.png" height="200px" width="200px">-->
-  
-  <img id ="productplaceholderimg" src="img/placeholderimg.png" onmouseenter="disappear(this)">
-  <video id="productvid" loop><source src = "media/comingsoon.mp4"  type="video/mp4" muted>Your browser does not support the video tag.</video>
 
-<!--<div class="pieces">
-  
-  <div id = "status">
-  <p class = "marquee">COMING SOON<br style = "line-height: 200px"></p><p class= "marquee">COMING SOON<br style = "line-height: 200px"></p>
-  <p class = "marquee">COMING SOON<br style = "line-height: 200px"></p><p class= "marquee">COMING SOON<br style = "line-height: 200px"></p>
-  <p class = "marquee">COMING SOON<br style = "line-height: 200px"></p>
-</div>
-</div>
-
--->
 <!--CUSTOM TEXT-->
 
 
@@ -81,8 +131,39 @@
 
 <!--SCRIPTS-->
 <script src="js/serpentlion.js"></script>
+<script src="js/fitty.min.js"></script>
 <script>
 
+
+fitty('.bigger-woman-txt', {
+  minSize: 15,
+  maxSize: 300
+});
+
+
+const customOpacity = 0.88;
+shown = false;
+
+$("#bigger-woman").mouseenter(function() {
+  if (shown) {
+    return;
+  }
+  shown = true;
+  $(".bigger-woman-txt").animate({ opacity: customOpacity} , 400);
+
+});
+
+
+$("#bigger-woman").mouseleave(function() {  
+  if (!shown) {
+    return;
+  }
+  shown = false;
+  $(".bigger-woman-txt").animate({ opacity: 0} , 400)
+});
+
+
+/* // Coming Soon Video 
 window.onload = function() {
   const pvid = document.getElementById("productvid");
   const marquees = document.getElementsByClassName("marquee");
@@ -108,5 +189,7 @@ window.onload = function() {
       pvid.style.cursor = "pointer";
     }});
 };
+
+*/
 </script>
 </html>
