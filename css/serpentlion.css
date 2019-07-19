@@ -657,9 +657,12 @@ pre {
   margin: 0 auto;
   align-items: center;
   text-align: center;
+}
 
-
-
+.products-wrapper a{
+  text-decoration: none;
+  display: inline-flex;
+  
 }
 
 .product-info-wrapper {
