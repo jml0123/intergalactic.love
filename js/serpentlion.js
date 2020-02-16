@@ -141,9 +141,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
   };
 })(jQuery, window);
 
-$(document).ready( function() {
 
-  //INITIALIZE MARQUEES
+
+
+$(document).ready( function() {
+//INITIALIZE MARQUEES
+
 SPEEDFACTOR = 2 //Changes speed of shape
 //crescent
 $('.m1').marqueeify({
@@ -177,6 +180,8 @@ $('.m7').marqueeify({
   });
 
 //SPLASH PAGE & BIO
+
+
 $(".mainsplash_main").mouseenter(function(){
         $(".bio").fadeIn(2000);
   }); 
@@ -185,7 +190,9 @@ $(".mainsplash_main").mouseleave(function(){
         $(".bio").fadeOut(1);
   });
 
+
 //PAUSE MARQUEE AND TEXT DESCRIPTION ON HOVER
+
 $(".crescent").find("img").mouseenter(function(){
         $(".m1").pause();
         $(".n1").fadeIn(700);
@@ -285,6 +292,8 @@ $(document).ready(function() {
 });
 
 });
+
+
 
 function disappear(element) {
   element.style.display = "none";
