@@ -677,28 +677,26 @@ pre {
 #products-pg {
   width: 100vw;
   height: auto;
-  min-height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;
-  position: absolute;
-
-
+  flex-direction: column;
+  margin-top: 25vh;
 }
+
 
 .products-slide {
   width: 97vw;
-  height: 97vh;
-  display: inline-flex;
+  height: auto;
+  display: flex;
   flex-direction: row;
-  position: absolute;
+  position: relative;
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 33vh;
   padding: 0;
   z-index: 0;
-
-
 }
 
 .products-wrapper {
@@ -755,25 +753,22 @@ pre {
   height: 85%;
   width: auto;
   margin: 0 auto;
-  display: inline-flex;
+  display: flex;
   text-align: center;
   align-items: center;
-
-
-
 }
 
 .product-img-wrapper img {
   margin: 1vw;
   position: relative;
   height: 56%;
+  max-height: 250px;
   display: inline-block;
   padding: 1vw;
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   filter: drop-shadow(2px 2px 3px #1f1f1f);
-
-
 }
+
 .product-img-wrapper:hover {
   transform: scale(1.02);
   transition: 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -845,7 +840,7 @@ pre {
 
 }
 
-.bigger-woman-txt{
+.product-text-body p{
     opacity: 0;
 }
 
@@ -981,7 +976,9 @@ pre {
 
 @media only screen and (max-width: 900px) {
 
-
+#products-pg {
+  margin-top: 0
+}
 .product-text-wrapper-l, .product-text-wrapper-r {
   display: none;
 }
@@ -1001,7 +998,9 @@ pre {
   flex-direction: column;
   padding: 0;
   margin: 0 auto;
-
+  margin-bottom: 0;
+  display: block;
+  position: relative;
 
 }
 
@@ -1026,7 +1025,9 @@ pre {
 
 }
 
-#bigger-woman-back {
+
+
+.product-img-wrapper img:nth-child(2) {
   display: none;
 }
 
@@ -1042,19 +1043,20 @@ pre {
 
 } 
 
-.mobile-caption-wrapper {
+.mobile-caption {
+  display: block;
+  height: 100%;
+}
 
+.mobile-caption-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
   font-family: 'Muli', sans-serif;
   color: #2a3984;
-  width: 80%;
+  width: auto;
   height: auto;
   font-size:  calc(1em + 0.5vw);
-  margin: 1.33em;
   padding: 1.33em;
-
-
 }
 
 
